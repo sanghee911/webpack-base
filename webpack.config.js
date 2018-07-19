@@ -7,6 +7,10 @@ module.exports = {
         path: path.join(__dirname, 'dist')
     },
     mode: 'development',
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        port: 5555
+    },
     module: {
         rules: [
             {
